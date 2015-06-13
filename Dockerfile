@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -r
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # try for optional package
-RUN apt-get qt5-default libqt5webkit5-dev
+RUN apt-get install -y qt5-default libqt5webkit5-dev
 
 ENV RAILS_VERSION 4.2.1
 
